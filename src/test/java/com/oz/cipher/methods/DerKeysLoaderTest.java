@@ -9,14 +9,14 @@ import java.security.PublicKey;
 /**
  * Created by samuel on 3/04/17.
  */
-public class RsaWithOpenSslAndDerFileTest {
+public class DerKeysLoaderTest {
 
-  private RsaWithOpenSslAndDerFIle cipherMethod;
-  private static final String BASE_PATH = "/keys";
+  private DerKeysLoader cipherMethod;
+  private static final String BASE_PATH = "keys";
 
   @Before
   public void init() {
-    this.cipherMethod = new RsaWithOpenSslAndDerFIle();
+    this.cipherMethod = new DerKeysLoader();
     java.security.Security.addProvider(
         new org.bouncycastle.jce.provider.BouncyCastleProvider()
     );

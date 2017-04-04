@@ -6,7 +6,7 @@ openssl genrsa -out mykey.pem 2048
 
 openssl pkcs8 -topk8 -inform PEM -outform PEM -in mykey.pem -out private_key.pem -nocrypt
 
-## Esport public PEM key
+## Export public PEM key
 
 openssl rsa -in private_key.pem -outform PEM -pubout -out public_key.pem
 

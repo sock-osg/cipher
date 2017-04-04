@@ -9,14 +9,14 @@ import java.security.PublicKey;
 /**
  * Created by samuel on 3/04/17.
  */
-public class PemFilesTest {
+public class PemKeysLoaderTest {
 
-  private PemFilesWithBouncyCastle cipherMethod;
-  private static final String BASE_PATH = "/keys";
+  private PemKeysLoader cipherMethod;
+  private static final String BASE_PATH = "keys";
 
   @Before
   public void init() {
-    this.cipherMethod = new PemFilesWithBouncyCastle();
+    this.cipherMethod = new PemKeysLoader();
   }
 
   @Test
